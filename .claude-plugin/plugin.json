@@ -1,0 +1,12 @@
+{
+  "name": "sequence",
+  "description": "Financial automation for businesses: view accounts, transfers and rules, automate money movement. Connects to the official Sequence MCP server over OAuth.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sequence",
+    "url": "https://getsequence.io"
+  },
+  "homepage": "https://app.getsequence.io",
+  "mcpServers": [".mcp.json"],
+  "skills": ["skills"]
+}

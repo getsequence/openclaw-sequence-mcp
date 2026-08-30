@@ -1,0 +1,29 @@
+{
+  "name": "@getsequence/sequence",
+  "version": "1.0.0",
+  "description": "Financial automation for businesses: view accounts, transfers and rules, automate money movement. Official OpenClaw plugin for the Sequence MCP server.",
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "mcp",
+    "sequence",
+    "banking",
+    "treasury",
+    "fintech"
+  ],
+  "homepage": "https://app.getsequence.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getsequence/openclaw-sequence-mcp.git"
+  },
+  "license": "MIT",
+  "private": false,
+  "files": [
+    ".claude-plugin",
+    ".mcp.json",
+    "openclaw.plugin.json",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ]
+}

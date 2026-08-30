@@ -1,0 +1,22 @@
+{
+  "slug": "sequence",
+  "name": "Sequence",
+  "summary": "Financial automation for businesses: view accounts, transfers and rules, automate money movement.",
+  "family": "bundle-plugin",
+  "bundle_format": "claude",
+  "categories": ["tools", "web"],
+  "topics": ["banking", "treasury", "transfers", "automation", "fintech"],
+  "discovery_terms": [
+    "business banking",
+    "treasury",
+    "cash balance",
+    "money movement",
+    "transfers",
+    "payment automation",
+    "tax savings"
+  ],
+  "mcp_url": "https://app.getsequence.io/api/mcp",
+  "skill_path": "./skills/sequence",
+  "version": "1.0.0",
+  "license": "MIT"
+}
