@@ -3,10 +3,11 @@
 **Give your agent access to your business finances — safely.**
 
 [Sequence](https://getsequence.io) is a financial automation platform for businesses. This is the
-official OpenClaw plugin: it connects your agent to your Sequence account so it can answer questions
-about your money, set up automations, and propose transfers that you approve.
+official Sequence plugin for OpenClaw: it connects your agent to your Sequence account so it can
+answer questions about your money, set up automations, and propose transfers that you approve.
 
-Money never moves without your explicit approval. See [How money movement works](#how-money-movement-works).
+On the default connection, money never moves without your explicit approval.
+See [How money movement works](#how-money-movement-works).
 
 ---
 
@@ -41,13 +42,13 @@ your Sequence role already allows.
 ## Install
 
 ```bash
-openclaw plugins install clawhub:@getsequence/sequence --accept-capabilities
+openclaw plugins install clawhub:@getsequence/sequence
 openclaw gateway restart
 ```
 
-The plugin connects to your Sequence account, so OpenClaw asks you to approve that access before
-installing — `--accept-capabilities` confirms it up front. Leave the flag off to review the prompt
-yourself first.
+OpenClaw will show you what the plugin is allowed to do and ask you to approve it. Worth reading —
+this plugin reaches your finances. Installing in a script or CI? Add `--accept-capabilities` to
+approve without the prompt.
 
 ### Signing in
 
@@ -81,6 +82,10 @@ before you trust it.
 
 **Your role still applies.** The plugin doesn't widen your permissions. If your Sequence account is
 read-only, your agent is read-only too.
+
+**One exception, if you go off the default path.** Everything above describes the browser sign-in this
+plugin uses. If you replace it with a Sequence API key (see [Custom setup](#custom-setup)), that key's
+own scopes and approval settings apply instead — so check them before pointing an agent at it.
 
 ---
 
@@ -122,10 +127,19 @@ connection off without uninstalling.
 
 ---
 
+## Good to know
+
+This plugin ships no application code of its own. It points OpenClaw at Sequence's hosted service and
+includes guidance so your agent uses it well.
+
+To reach that service it runs a small open-source helper,
+[`mcp-remote`](https://www.npmjs.com/package/mcp-remote), as a local process on your gateway machine —
+that's what handles the browser sign-in and what the Node.js requirement is for. It's pinned to a
+specific version rather than tracking the latest.
+
 ## Links
 
 - [Sequence](https://getsequence.io) · [Web app](https://app.getsequence.io)
 - [Report an issue](https://github.com/getsequence/openclaw-sequence-mcp/issues)
 
-MIT licensed. This plugin contains no application code — it connects OpenClaw to Sequence's hosted
-service and ships guidance for your agent.
+MIT licensed.
