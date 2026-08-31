@@ -35,7 +35,7 @@ your Sequence role already allows.
 
 ## Requirements
 
-- **A Sequence account.** Don't have one? [Get started](https://app.getsequence.io/agentic/signup).
+- **A Sequence account.** Don't have one? [Get started](https://app.getsequence.io/signup).
 - **Node.js** on the machine running your OpenClaw gateway. Sign-in runs as a local process there.
 
 ## Install
