@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "sequence": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote@0.1.43", "https://app.getsequence.io/api/mcp"],
+      "connectionTimeoutMs": 30000,
+      "requestTimeoutMs": 120000
+    }
+  }
+}

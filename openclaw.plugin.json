@@ -1,0 +1,13 @@
+{
+  "id": "sequence",
+  "name": "Sequence",
+  "description": "Financial automation for businesses: view accounts, transfers and rules, automate money movement.",
+  "version": "1.0.0",
+  "icon": "https://app.getsequence.io/favicon/512.png",
+  "skills": ["skills/sequence"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}
