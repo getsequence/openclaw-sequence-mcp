@@ -1,6 +1,6 @@
 {
   "name": "@getsequence/sequence",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Financial automation for businesses: view accounts, transfers and rules, automate money movement. Official OpenClaw plugin for the Sequence MCP server.",
   "keywords": [
     "openclaw",
